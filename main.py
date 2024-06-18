@@ -21,10 +21,14 @@ df = pandas.read_csv("data.csv", sep=";")
 
 col3, col4 = st.columns(2)
 
+print(df)
+
 with col3:
     for index, row in df[:10].iterrows():
         st.header(row["title"])
+        st.image(f"images/{row["image"]}")
 
 with col4:
     for index, row in df[10:].iterrows():
         st.header(row["title"])
+        st.image(f"images/{row["image"]}")
