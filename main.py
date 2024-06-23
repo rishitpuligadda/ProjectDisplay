@@ -4,9 +4,10 @@ import pandas
 st.set_page_config(layout="wide")
 
 col1, empty_col, col2 = st.columns([1.5, 0.5, 1.5])
+name = "cat.jpg"
 
 with col1:
-    st.image("images\\download.jpg", width=400)
+    st.image("images/cat.jpg", width=400)
 
 with col2:
     st.title("Rishit")
